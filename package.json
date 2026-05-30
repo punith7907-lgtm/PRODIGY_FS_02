@@ -1,0 +1,20 @@
+{
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "Employee Management System with unified root node_modules",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "serve-frontend": "npx http-server frontend -p 3000",
+    "dev": "concurrently \"npm run start\" \"npm run serve-frontend\""
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "sqlite3": "^6.0.1"
+  },
+  "license": "ISC"
+}
